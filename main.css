@@ -1,0 +1,50 @@
+
+
+.box-1 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+    height: 90px;
+    background-color: rgb(0, 255, 149);
+}
+
+.btn:hover {
+    color: aqua;
+    background-color: rgb(223, 112, 69);
+}
+
+.box-2 {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.box-3 {
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+    height: 90px;
+    background-color: rgb(0, 255, 149);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #db5e5e;
+}
+
+.box-4 {
+    font-size: 20px;
+    font-weight: 700;
+    width: 150px;
+    height: 90px;
+    background-color: rgb(192, 85, 53);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #db5e5e;
+}
