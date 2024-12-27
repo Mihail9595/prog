@@ -1,11 +1,10 @@
-let num = Math.round(Math.random() * 10);
-let result = num % 2
-
-let btn = document.querySelector('.btn');
+const btn = document.querySelector('.btn');
 const box2 = document.querySelector('.box-2');
 
+btn.addEventListener('click', function () {
 
-btn.addEventListener('click', function (event) {
+    let num = Math.round(Math.random() * 10);
+    const result = num % 2
 
     if (result == 0) {
         const box = `
@@ -16,7 +15,7 @@ btn.addEventListener('click', function (event) {
         box2.insertAdjacentHTML('beforeend', box);
 
     } else {
-    
+
         const box = `
                <div class="box-4">
                     Нет
@@ -24,6 +23,18 @@ btn.addEventListener('click', function (event) {
             `;
         box2.insertAdjacentHTML('beforeend', box);
     }
+
+    btn.disabled = true;
+
+    setTimeout(() => {
+        deleteBox2();
+        num = 0;
+    }, 2000);
 })
+
+function deleteBox2() {
+    box2.innerHTML = '';
+    btn.disabled = false;
+}
 
 
